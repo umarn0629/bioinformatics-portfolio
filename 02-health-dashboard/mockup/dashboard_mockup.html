@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"Helvetica Neue",Arial,sans-serif; background:#eceef1; padding:18px; width:1080px; }
+  .title { font-size:22px; font-weight:700; color:#1a1a2e; margin-bottom:2px; }
+  .subtitle { font-size:12px; color:#666; margin-bottom:12px; }
+  .filterbar { display:flex; gap:10px; margin-bottom:12px; }
+  .filter { background:#fff; border:1px solid #d5d9de; border-radius:5px; padding:6px 12px;
+            font-size:11px; color:#333; }
+  .filter b { color:#c0392b; }
+  .kpirow { display:flex; gap:12px; margin-bottom:12px; }
+  .kpi { flex:1; background:#fff; border-radius:8px; padding:14px 16px; box-shadow:0 1px 3px rgba(0,0,0,.08); }
+  .kpi .label { font-size:11px; color:#888; text-transform:uppercase; letter-spacing:.5px; }
+  .kpi .num { font-size:26px; font-weight:700; color:#c0392b; margin-top:4px; }
+  .kpi .sub { font-size:11px; color:#555; margin-top:2px; }
+  .panel { background:#fff; border-radius:8px; padding:12px 14px; box-shadow:0 1px 3px rgba(0,0,0,.08); }
+  .panel h3 { font-size:13px; color:#1a1a2e; margin-bottom:8px; }
+  .maprow { margin-bottom:12px; }
+  .maprow img { width:100%; display:block; }
+  .botrow { display:flex; gap:12px; }
+  .botrow .panel { flex:1; }
+  .botrow img { width:100%; display:block; }
+  .tag { display:inline-block; background:#fdecea; color:#c0392b; font-size:10px;
+         padding:2px 8px; border-radius:10px; margin-left:8px; vertical-align:middle; }
+</style></head>
+<body>
+  <div class="title">U.S. Adult Obesity &amp; Lifestyle Dashboard <span class="tag">MOCKUP — real data</span></div>
+  <div class="subtitle">Source: CDC Nutrition, Physical Activity &amp; Obesity (BRFSS), 2011–2024 · Data cleaned in Python</div>
+
+  <div class="filterbar">
+    <div class="filter">Metric: <b>Obesity ▾</b></div>
+    <div class="filter">Year: <b>2022 ▾</b></div>
+    <div class="filter">Breakdown: <b>Income ▾</b></div>
+    <span style="font-size:11px;color:#999;align-self:center;">← interactive filters (viewers change these)</span>
+  </div>
+
+  <div class="kpirow">
+    <div class="kpi"><div class="label">National obesity rate (2022)</div><div class="num">33.3%</div><div class="sub">of U.S. adults</div></div>
+    <div class="kpi"><div class="label">Highest state</div><div class="num">41.0%</div><div class="sub">West Virginia</div></div>
+    <div class="kpi"><div class="label">Lowest state</div><div class="num">24.3%</div><div class="sub">District of Columbia</div></div>
+  </div>
+
+  <div class="panel maprow">
+    <h3>Obesity rate by state (darker = higher)</h3>
+    <img src="/Users/nurudeenumar/Desktop/bioinformatics-projects/02-health-dashboard/mockup/map.png">
+  </div>
+
+  <div class="botrow">
+    <div class="panel"><h3>Trend over time</h3>
+      <img src="/Users/nurudeenumar/Desktop/bioinformatics-projects/02-health-dashboard/mockup/trend.png"></div>
+    <div class="panel"><h3>Disparity by demographic</h3>
+      <img src="/Users/nurudeenumar/Desktop/bioinformatics-projects/02-health-dashboard/mockup/bar.png"></div>
+  </div>
+</body></html>
