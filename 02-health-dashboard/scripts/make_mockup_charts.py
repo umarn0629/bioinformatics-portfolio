@@ -1,5 +1,5 @@
 """Generate preview chart images (map, trend, bar) + KPI numbers from the real data,
-so we can show what the finished Tableau dashboard will look like."""
+so I can show what the finished Tableau dashboard will look like."""
 import pandas as pd
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
