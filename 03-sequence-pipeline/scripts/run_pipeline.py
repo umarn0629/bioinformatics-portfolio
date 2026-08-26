@@ -102,7 +102,7 @@ for sp, v in human_sim.items():
 print("\nSTEP 3 — Building the phylogenetic (evolutionary) tree")
 # ---------------------------------------------------------------
 # Distance = how different two proteins are (100% - % identical).
-# Biopython builds a Neighbor-Joining tree from a lower-triangular distance matrix.
+
 lower = []
 for i, a in enumerate(species_list):
     lower.append([round((100.0 - ident.loc[a, species_list[j]]) / 100.0, 4)
