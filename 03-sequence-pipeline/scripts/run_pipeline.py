@@ -10,8 +10,7 @@ This pipeline:
   3. BUILDS a phylogenetic (evolutionary) tree from those similarities.
   4. VISUALIZES the result as a similarity heatmap and a tree.
 
-Everything runs in Python with Biopython. You run it once; read the comments
-to understand each step (that's what lets you explain it in an interview).
+
 """
 from pathlib import Path
 import pandas as pd
