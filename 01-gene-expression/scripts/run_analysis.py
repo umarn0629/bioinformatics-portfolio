@@ -12,8 +12,7 @@ This script:
   4. Adds human-readable gene names.
   5. Saves a results table + three figures (volcano, heatmap, PCA).
 
-You run this once. Read the comments to understand each step — that's what
-lets you explain the project in an interview.
+
 """
 
 # ---- Standard data tools ----
